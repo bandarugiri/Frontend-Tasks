@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-// import { Member } from './component/member/Member';
+
 import AboutUs from './component/aboutus/About-us';
 import './App.css';
 import Header from './component/header/Header';
