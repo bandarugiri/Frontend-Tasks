@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import { Member } from './component/member/Member';
+// import { Member } from './component/member/Member';
 import AboutUs from './component/aboutus/About-us';
 import './App.css';
 import Header from './component/header/Header';
@@ -9,7 +9,7 @@ import Section from './component/section/Section';
 // import Header from './component/header/header';
 
 function App() {
-	 const team = [
+	 const team = [ 
 	{name: "Karthik" , city: "kuppam"},
 	{name: "BGP" , city: "Tadipatri"},
 	{name: "Tirupathi" , city: "Gurrapushala"},
