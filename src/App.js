@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { Member } from './Member';
-import AboutUs from './About-us';
+import { Member } from './component/member/Member';
+import AboutUs from './component/aboutus/About-us';
 import './App.css';
+import Header from './component/header/Header';
+import MembersList from './component/membersList/MembersList';
+import Section from './component/section/Section';
+// import Header from './component/header/header';
 
 function App() {
-
-    const team = [
+	 const team = [
 	{name: "Karthik" , city: "kuppam"},
 	{name: "BGP" , city: "Tadipatri"},
 	{name: "Tirupathi" , city: "Gurrapushala"},
@@ -35,49 +38,54 @@ function App() {
 	{name: "Vishnu" , city: "Nellore"},
 	{name: "Sai" , city: "Tadipatri"}
 	];
+   
+	// while (true) {
+	// const RandomNumber = () => {
+		
+	// 	const randomIndex = Math.floor(Math.random() * team.length);
+	// 	const selectedMember = team[randomIndex];
+	// 	// alert(`Selected Member: ${selectedMember.name} from ${selectedMember.city}`);
+	// 	console.log(`Selected Member: ${selectedMember.name} from ${selectedMember.city}`);
+		
+
+	// 	document.querySelector(' .ranButton').innerHTML = `Lucky Person: ${selectedMember.name} ${selectedMember.city}`;
+
+	// }
+
+
   return   (
         <div className="App"> 
-            <h1 style={{backgroundColor: 'blue' , textAlign:'center'}}>First step is the great step</h1>
-            
-            <AboutUs />
-            <div class = 'members'>
-{/* 
-              {team.map(function (member) {
-                return <Member name={member.name} city = {member.city} />
-              })} */}
-            {/* <Member name ='BGP' city = 'AP' />
-            <Member name = 'Pallavi' city = 'banglore' />
-            <Member name = 'Karthik' city = 'banglore' /> */}
-            </div>
+			{/* <div className='header'>
+            	<h1 className='appStyle'>First step is the great step</h1>
+			</div> */}
+            <Header />
+			<div className='members-container' >
+
+				<Section  title ="About-Us">
+					<AboutUs />
+				 </Section>
+
+				<Section title = "Members">
+					<MembersList /> 
+				</Section>
+
+				{/* <AboutUs />   	
+				<MembersList /> */}
+		   	</div>
+
+
+
+
+			{/* <div className='selectingButton'>
+				<h1><button className='ranButton'  onClick={RandomNumber} >Lucky Person</button></h1>
+			</div> */}
         </div>
+		
         
       
       );
-            
-           
-             
-
-
-
-
-
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={logo} className="App-logo" alt="logo" />
-  //       <p>
-  //         Edit <code>src/App.js</code> and save to reload.
-  //       </p>
-  //       <a
-  //         className="App-link"
-  //         href="https://reactjs.org"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Learn React
-  //       </a>
-  //     </header>
-  //   </div>
   
 }
+// }
 
 export default App;

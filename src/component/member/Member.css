@@ -1,0 +1,15 @@
+.member {
+    padding : 20px;
+    border: 1px solid black;
+    /* border-radius: 50px; */
+    /* margin: 10px;  */
+    background-color: orange;
+    color: blue;
+    width: 200px;
+
+    
+}
+.city {
+    font-weight: bold;;
+    color: green;
+}
